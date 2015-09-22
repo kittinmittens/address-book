@@ -99,7 +99,8 @@ class MenuController
       puts "#{selection} is not a valid input"
       entries_submenu(entry)
     end
-  def view_n
+  def view_n(@address_book)
+    # input, process, and the output
     @address_book.entries.each do |entry|
       system "clear"
       puts "What number entry?"
